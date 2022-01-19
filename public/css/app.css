@@ -27,6 +27,29 @@ img {
   padding: 0 1rem;
 }
 
+.main-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+.main-header img {
+  width: 4rem;
+  margin-right: 3rem;
+}
+.main-header ul {
+  display: flex;
+  list-style: none;
+}
+.main-header ul li {
+  margin-right: 1rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.main-header ul li.active {
+  color: #0182f9;
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;
