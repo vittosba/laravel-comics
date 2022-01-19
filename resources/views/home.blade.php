@@ -1,16 +1,20 @@
 @extends('layouts.main')
 
 @section('main-content')
-    @if (! empty($comics))
-        <ul class="cards">
-            @foreach ($comics as $comic)
-                <li class="card">
-                    <img src="{{ $comic['thumb'] }}" alt="">
-                    <div class="comic-title">{{ $comic['series'] }}</div>
-                </li>
-            @endforeach
-        </ul>        
-    @else
-        <h2>Nessun comics trovato</h2>
-    @endif
+    <div class="container">
+        @if (! empty($comics))
+            <div class="cards">
+                @foreach ($comics as $comic)
+                    <div class="card">
+                        <img src="{{ $comic['thumb'] }}" alt="">
+                        <div class="comic-title">{{ $comic['series'] }}</div>
+                    </div>
+                @endforeach
+                
+                <button>load more</button>
+            </div>        
+        @else
+            <h2>Nessun comics trovato</h2>
+        @endif
+    </div>
 @endsection

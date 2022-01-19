@@ -1,0 +1,53 @@
+/*
+APP MAIN STYLES
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+main {
+  color: #fff;
+  background: #1c1c1c;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4rem 0;
+}
+.cards .card {
+  width: 16.6666666667%;
+  padding: 1rem;
+}
+.cards .card .comic-title {
+  padding: 1rem 0;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+.cards button {
+  background: #0182f9;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  border: none;
+  cursor: pointer;
+}
