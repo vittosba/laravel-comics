@@ -3,7 +3,9 @@
         <img src="{{ asset('images/dc-logo.png') }}" alt="">
 
         <ul>
-            <li class="active">Comics</li>
+            <li @if (Request::route()->getName() === 'home') class="active" @endif>
+                <a href="{{ route('home') }}">Comics</a>
+            </li>
             <li>News</li>
         </ul>
     </div>

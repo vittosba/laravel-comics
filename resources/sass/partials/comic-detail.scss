@@ -1,0 +1,99 @@
+.comic-detail {
+    .hero {
+        background-image: url('../images/jumbotron.jpg');
+
+        .img-container {
+            position: relative;
+            display: inline-block;
+            margin: 5rem;
+            transform: translate(0,43%);
+
+            .comic-book {
+                position: absolute;
+                top: 1px;
+                left: 0;
+                text-transform: uppercase;
+                font-size: .75rem;
+                background: rgb(26, 175, 224);
+                padding: 2px;
+            }
+
+            .gallery {
+                position: absolute;
+                bottom: 1px;
+                left: 0;
+                width: 100%;
+                text-transform: uppercase;
+                font-size: .75rem;
+                background: rgb(26, 175, 224);
+                padding: 2px;
+            }
+        }
+
+        .bottom-hero {
+            height: 3.7rem;
+            background: $primary-col;
+        }
+    }
+
+    .details {
+        color: $secondary-col;
+        background: $text-col;
+        padding: 6rem 0;
+
+        .row {
+            display: flex;
+
+            .col-8 {
+                width: calc(100% / 12 * 8);
+
+                .comic-title {
+                    text-transform: uppercase;
+                }
+
+                .infos {
+                    display: flex;
+                    background: rgb(32, 165, 32);
+                    margin: 2rem 0;
+                    font-size: .75rem;
+
+                    .left-infos {
+                        flex-grow: 1;
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 1rem;
+                        color: rgba(255, 255, 255, 0.582);
+                        border-right: 1px solid $secondary-col;
+
+                        .price {
+                            color: $text-col;
+                        }
+
+                        .availability {
+                            text-transform: uppercase;
+                        }
+                    }
+
+                    .right-infos {
+                        padding: 1rem;
+                        color: $text-col;
+                    }
+                    
+                }
+            }
+
+            .col-4 {
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+
+                padding: 3rem;
+
+                .adv {
+                    text-transform: uppercase;
+                    font-size: .75rem;
+                }
+            }
+        }
+    }
+}

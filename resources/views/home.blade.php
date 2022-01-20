@@ -4,10 +4,12 @@
     <div class="container">
         @if (! empty($comics))
             <div class="cards">
-                @foreach ($comics as $comic)
+                @foreach ($comics as $index => $comic)
                     <div class="card">
-                        <img src="{{ $comic['thumb'] }}" alt="">
-                        <div class="comic-title">{{ $comic['series'] }}</div>
+                        <a href="{{ route('comic-detail', ['id' => $index]) }}">
+                            <img src="{{ $comic['thumb'] }}" alt="">
+                            <div class="comic-title">{{ $comic['series'] }}</div>
+                        </a>
                     </div>
                 @endforeach
                 

@@ -18,9 +18,16 @@
             font-weight: bold;
             text-transform: uppercase;
 
-            &.active {
+            a {
+                color: $secondary-col;
+            }
+
+            &.active a{
                 color: $primary-col;
             }
+            
+
+            
         }
     }
 }
